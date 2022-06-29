@@ -9,4 +9,23 @@
 
 // Your CSS partials
 @import "components/index";
+@import "components/button";
 @import "pages/index";
+
+
+body{
+    //background-image: url("banner.jpg");
+    background-color: black;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    color: white;
+  }

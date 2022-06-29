@@ -1,2 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container home-container">
+  <div>
+  <h1>Onixtech</h1>
+  <div class="btns-home">
+    <% if user_signed_in? %>
+    <%= link_to "Enter", "#", id: "btn-home"%>
+    <% else %>
+    <%= link_to "Login", "#", class: "btn-home"%>
+    <p>or</p>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn-home"%>
+    <% end %>
+  </div>
+  </div>
+</div>
+
